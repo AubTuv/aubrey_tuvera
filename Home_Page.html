@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Garden</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/monarda");
+      body {
+        background-color: #696cbc;
+      }
+      h1 {
+        color: #fffae3;
+        background-image: url(https://e0.pxfuel.com/wallpapers/27/69/desktop-wallpaper-lavender-field-lavender-fields.jpg);
+        size: 800px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100% 50%;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-size: 130px;
+        font-weight: bolder;
+        font-family: "Monarda", sans-serif;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 500px;
+        padding-left: 0px;
+        padding-right: -10px;
+        margin-top: -10px;
+        margin-bottom: 0px;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+      hr {
+        margin-block-start: 2010px;
+        width: 100%;
+      }
+      h2 {
+        height: 200px;
+        text-align: justify;
+        line-height: 2;
+        color: #fffae3;
+        background-color: #696cbc;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 1000px;
+        margin-right: 0px;
+        font-size: 15px;
+        font-weight: 10;
+        font-family: serif;
+        position: absolute;
+        top: 2800px;
+        left: 100px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        z-index: 1;
+      }
+      h3 {
+        height: 200px;
+        text-align: justify;
+        line-height: 2;
+        color: #fffae3;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 200px;
+        margin-right: 0px;
+        font-size: 15px;
+        font-weight: 10;
+        font-family: serif;
+        position: absolute;
+        top: 2800px;
+        left: 100px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        z-index: 2;
+      }
+      button {
+        background: none;
+        opacity: 95%;
+        border: 2px solid #fffae3;
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        color: #fffae3;
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0px auto;
+        margin-left: 200px;
+        margin-top: -50px;
+        padding: 10px 15px;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        background: #dbaaec;
+        color: #fffae3;
+        cursor: pointer;
+      }
+      .i1 {
+        position: absolute;
+        top: 320px;
+        left: 609px;
+      }
+      .i2 {
+        position: absolute;
+        top: 320px;
+        left: 683px;
+      }
+
+      .i3 {
+        position: absolute;
+        top: 320px;
+        left: 756px;
+      }
+      .i4 {
+        position: absolute;
+        top: 320px;
+        left: 825px;
+      }
+
+      .n1 {
+        text-align: center;
+        line-height: 2;
+        color: #696cbc;
+        background-color: #fffae3;
+        padding-bottom: 2000px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 200px;
+        font-size: 25px;
+        font-weight: 10;
+        font-family: "Monarda", sans-serif;
+        position: absolute;
+        top: 400px;
+        left: 100px;
+        padding-top: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+        z-index: 1;
+      }
+
+      .n2 {
+        height: 200px;
+        text-align: justify;
+        line-height: 2;
+        color: #fffae3;
+        background-color: #dbaaec;
+        padding-bottom: 100px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 200px;
+        font-size: 20px;
+        font-weight: 10;
+        font-family: serif;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+        padding-top: 200px;
+        padding-left: 500px;
+        padding-right: 150px;
+        z-index: 1;
+      }
+      .h1 {
+        text-align: center;
+        line-height: 2;
+        color: #fffae3;
+        background-color: none;
+        padding-bottom: 100px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 195px;
+        font-size: 75px;
+        font-weight: 10;
+        font-family: "Monarda", sans-serif;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+        padding-top: 130px;
+        padding-left: 500px;
+        padding-right: 100px;
+        z-index: 3;
+      }
+
+      .n3 {
+        height: 200px;
+        text-align: right;
+        line-height: 2;
+        color: #fffae3;
+        background-color: #dbaaec;
+        padding-bottom: 100px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 200px;
+        font-size: 20px;
+        font-weight: 10;
+        font-family: serif;
+        position: absolute;
+        top: 1200px;
+        left: 100px;
+        padding-top: 200px;
+        padding-left: 150px;
+        padding-right: 500px;
+        z-index: 1;
+      }
+      .h2 {
+        text-align: right;
+        line-height: 2;
+        color: #fffae3;
+        background-color: none;
+        padding-bottom: 100px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 195px;
+        font-size: 75px;
+        font-weight: 10;
+        font-family: "Monarda", sans-serif;
+        position: absolute;
+        top: 1200px;
+        left: 500px;
+        padding-top: 130px;
+        padding-left: 450px;
+        padding-right: 100px;
+        z-index: 3;
+      }
+
+      .n4 {
+        height: 200px;
+        text-align: justify;
+        line-height: 2;
+        color: #fffae3;
+        background-color: #dbaaec;
+        padding-bottom: 100px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 200px;
+        font-size: 20px;
+        font-weight: 10;
+        font-family: serif;
+        position: absolute;
+        top: 1800px;
+        left: 100px;
+        padding-top: 200px;
+        padding-left: 500px;
+        padding-right: 150px;
+        z-index: 1;
+      }
+      .h3 {
+        text-align: justify;
+        line-height: 2;
+        color: #fffae3;
+        background-color: none;
+        padding-bottom: 100px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 100px;
+        margin-right: 195px;
+        font-size: 75px;
+        font-weight: 10;
+        font-family: "Monarda", sans-serif;
+        position: absolute;
+        top: 1800px;
+        left: 100px;
+        padding-top: 130px;
+        padding-left: 500px;
+        padding-right: 100px;
+        z-index: 3;
+      }
+      .p1 {
+        width: 500px;
+        top: 680px;
+        height: 500px;
+        left: 150px;
+        z-index: 9;
+        position: absolute;
+      }
+      .p2 {
+        width: 550px;
+        height: 500px;
+        top: 1280px;
+        left: 1250px;
+        z-index: 9;
+        position: absolute;
+      }
+      .p3 {
+        width: 500px;
+        height: 500px;
+        top: 1880px;
+        left: 150px;
+        z-index: 9;
+        position: absolute;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><b>The Secret Garden</b></h1>
+      <ul>
+        
+          <li style="list-style-type: none" class="i1">
+            <button onclick="doSomething()">Home</button>
+          </li>
+        </a>
+        <li style="list-style-type: none" class="i2">
+            <button onclick="doSomething1()">About</button>
+        </li>
+        <li style="list-style-type: none" class="i3">
+          <button onclick="doSomething2()">Shop</button>
+        </li>
+        <li style="list-style-type: none" class="i4">
+          <button onclick="doSomething3()">Contact</button>
+        </li>
+      </ul>
+      <p class="n1">
+        "Step into a world where enchantment blooms in every corner, as we
+        curate treasures that defy the ordinary. Explore mystical jewelry and
+        captivating decor that transport you to fantastical realms. Embrace the
+        allure of the unknown at our digital oasis."
+      </p>
+      <p class="h1">About Us</p>
+      <p class="n2">
+        At "Secret Garden," we're dream-weavers, curating a world where magic
+        and creativity collide. Our mission is to bring the extraordinary into
+        your everyday life, offering handpicked treasures that transport you to
+        enchanting realms. Explore our digital oasis, where imagination knows no
+        bounds.
+      </p>
+      <p class="h2">Shop</p>
+      <p class="n3">
+        Dive into our wonder-filled emporium, where each item is a portal to a
+        world of charm and allure. From mystical jewelry to captivating decor,
+        every piece is carefully selected to ignite your sense of wonder and
+        awe. Unearth unique treasures that celebrate the extraordinary in the
+        ordinary.
+      </p>
+      <p class="h3">Contact</p>
+      <p class="n4">
+        Got questions, feedback, or just want to share your own magical tales?
+        We're all ears! Reach out to us anytime. Let's embark on this enchanting
+        journey together, and may your curiosity guide the way.
+      </p>
+      <img
+        src="https://images.freeimages.com/images/large-previews/364/purple-flowers-1632907.jpg"
+        class="p1"
+      />
+      <img
+        src="https://h2.commercev3.net/cdn0.dutchbulbs.com/images/500/89394.jpg"
+        class="p2"
+      />
+      <img
+        src="https://media.istockphoto.com/id/186834494/photo/pansies.jpg?s=612x612&w=0&k=20&c=QqLCS93_i8PE4wrgXUZQ5qIFQFe2Ne5A9Xi1J_G9vdk= "
+        class="p3"
+      />
+
+      <hr />
+      <h2>
+        <b>Contact us<br /></b>
+        Email:secret_garden_shop@gmail.com<br />
+        Instagram:https://instagram.com/SecretGardenShop<br />
+        Facebook:https://facebook.com/SecretGardenShop<br />
+        Viber:+092 723 128902
+      </h2>
+      <h3>
+        This page is created by Aubrey Tuvera<br />
+        Date:09/16/2023<br />
+        Section:CIT14 | CITCS 2K Group B
+      </h3>
+    </div>
+    <script>
+      function doSomething() {
+    window.location.href = "Home_Page.html";
+      }
+       function doSomething1() {
+    window.location.href = "Webbie.html";
+      }
+       function doSomething2() {
+    window.location.href = "alej.html";
+      } 
+      function doSomething3() {
+    window.location.href = "aho.html";
+      } 
+    </script>
+  </body>
+</html>

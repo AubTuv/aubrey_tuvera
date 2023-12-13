@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        background-image: url("porpol.png");
+        background-size: cover;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background-color: transparent;
+        padding: 10px;
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+      }
+
+      .header-button {
+        margin-right: 25px;
+        padding: 10px 15px;
+        background-color: purple;
+        color: white;
+        border: black;
+        cursor: pointer;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 77% 23%;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .main-content {
+        background-color: sky;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 550px;
+        font-size: 25px;
+        color: white;
+      }
+
+      .main-content img {
+        width: 100%;
+        height: 550px;
+      }
+
+      .ads {
+        padding: 50px;
+        height: 500px;
+      }
+
+      .ads img {
+        width: 100%;
+        height: 550px;
+      }
+
+      .footer {
+        background-color: transparent;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <button class="header-button" onclick="doSomething3()">OASIS</button>
+        <button class="header-button" onclick="doSomething1()">ABOUT US</button>
+        <button class="header-button" onclick="doSomething2()">ARTICLE1</button>
+      </div>
+      <div class="header-right">
+        <button class="header-button" onclick="doSomething4()">SIGN IN</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-content">
+        <div>
+          <h1>BAGUIO COUNTRY CLUB</h1>
+          <p>
+            Welcome to Baguio Country Club, a luxurious 5-star mountain resort
+            nestled in the breathtaking city of Baguio, Philippines. With a rich
+            history dating back to 1905, this prestigious club has been a haven
+            for the elite and influential names in Philippine society. Immerse
+            yourself in the charm of our world-class amenities and services,
+            including our well-maintained 18-hole golf course, perfect for golf
+            enthusiasts. Experience our commitment to sustainable environmental
+            practices, which has earned us the 4th ASEAN Environmentally
+            Sustainable Cities Award in 2017. Discover our impeccable conference
+            facilities, ideal for hosting corporate events and gatherings. Join
+            us in our social and civic activities, as we strive to make a
+            positive impact on our community. Come and experience the epitome of
+            luxury and elegance at Baguio Country Club.
+          </p>
+        </div>
+        <div>
+          <img src="BG7.jpg" alt="Baguio Country Club" />
+        </div>
+      </div>
+      <div class="ads">
+        <img src="kok.jpg" alt="Advertisement" />
+      </div>
+    </div>
+    <footer class="footer">
+      <p>� Joshua Calixto</p>
+    </footer>
+    <script>
+      function doSomething1() {
+        window.location.href = "Oasis_aboutus.html";
+      }
+      function doSomething2() {
+        window.location.href = "Oasis_article1.html";
+      }
+      function doSomething3() {
+        window.location.href = "OASIS_Home_Page.html";
+      }
+      function doSomething4() {
+        window.location.href = "oasis_signIn.html";
+      }
+    </script>
+  </body>
+</html>

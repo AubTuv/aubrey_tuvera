@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+
+    <title>AUBREY TUVERA Portfolio</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/monarda");
+      body {
+        padding-top: 56px;
+        background-color: #eca1ac;
+      }
+
+      header {
+        position: relative;
+        background-image: url("b.gif");
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      header.intro {
+        opacity: 1;
+      }
+
+      .profile-picture,
+      .profile-name,
+      .cute-tags {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      header.intro .profile-picture,
+      header.intro .profile-name,
+      header.intro .cute-tags {
+        opacity: 1;
+      }
+      .navbar {
+        background-color: #7c3042;
+      }
+      .nav-link {
+        color: white;
+      }
+      .navbar-brand {
+        color: white !important;
+        font-family: "Monarda", sans-serif;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item a,
+      .navbar-toggler-icon {
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item a:hover,
+      .navbar-toggler-icon:hover {
+        color: #eca1ac;
+      }
+
+      .profile-section {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .profile-picture {
+        width: 320px;
+        height: 350px;
+        border-radius: 50%;
+        border: 5px solid #28151d;
+      }
+
+      .profile-name {
+        font-size: 50px;
+        padding-top: 2%;
+        color: #28151d;
+        text-align: center;
+        font-family: "Monarda", sans-serif;
+      }
+
+      .quote-section {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer {
+        padding: 20px 0;
+        background-color: #7c3042;
+      }
+
+      .social-icons {
+        font-size: 15px;
+        margin-right: 10px;
+      }
+      .page-section {
+        margin: 8%;
+        padding: 20px;
+        background-color: white;
+        width: 75%;
+        margin-left: 13%;
+      }
+      .page-section.zoom-in {
+        transform: scale(1);
+        transition: transform 0.5s ease;
+      }
+
+      .page-section:not(.zoom-in) {
+        transform: scale(0.8);
+        transition: transform 0.5s ease;
+      }
+      .card {
+        background-color: #f9cdd4;
+      }
+      .card-body a {
+        color: white;
+        background-color: #7c3042;
+        padding: 5px 10px;
+        border: 2px solid none;
+        border-radius: 5px;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      }
+
+      .card-body a:hover {
+        color: #28151d;
+        background-color: #b25b6e;
+        text-decoration: none;
+      }
+      .card-title a,
+      .social-icons {
+        color: #7c3042;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .card-title a:hover,
+      .social-icons:hover {
+        color: #eca1ac;
+      }
+      h2 {
+        font-family: "Monarda", sans-serif;
+        color: #7c3042;
+        font-size: 50px;
+      }
+      hr {
+        font-family: "Quicksand", sans-serif;
+      }
+      .cute-tags {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .cute-tag {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-right: 10px;
+        margin: 0 5px;
+        background-color: white;
+        color: #28151d;
+        border-radius: 10px;
+        font-family: "Quicksand", sans-serif;
+        font-size: 14px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+
+      .cute-tag:hover {
+        background-color: #28151d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" color="white">Aubrey Tuvera</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#likes-dislikes">Likes/Dislikes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#socials">Socials</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="profile-name">Aubrey Tuvera</div>
+      <div class="profile-section">
+        <img class="profile-picture" src="a.jpg" alt="Profile Picture" />
+      </div>
+      <div class="cute-tags">
+        <span class="cute-tag">Cosplayer</span>
+        <span class="cute-tag">Gamer</span>
+        <span class="cute-tag">Coder</span>
+      </div>
+    </header>
+    <section class="page-section" id="about">
+      <div class="container">
+        <h2 class="text-center mt-0">About Me</h2>
+        <hr class="divider my-4" />
+        <br />
+        <br />
+        👋 Hello there! I'm Aubrey Tuvera, a passionate 2nd-year IT student at
+        the University of the Cordilleras, specializing in web technologies.
+        <br />
+        <br />
+        🖥️ Immersed in the ever-evolving realm of IT, I joyfully unravel the
+        complexities of web development, staying at the forefront of trends.
+        From coding to designing, I love the dynamic challenges. <br />
+        <br />
+        🎭 Beyond the digital landscape, I transform into different characters
+        through cosplaying, blending creativity with craftsmanship. <br />
+        <br />
+        🎨 When not in front of a computer or preparing for a cosplay event,
+        you'll find me sketching in my notebook—a therapeutic outlet allowing my
+        imagination to flow freely. <br />
+        <br />
+        🎶 Additionally, I enjoy composing songs as a harmonious escape,
+        expressing emotions and telling stories. In this journey, I'm eager to
+        connect with like-minded individuals passionate about technology, art,
+        and self-expression. Let's explore the vast possibilities together!
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <section class="page-section" id="likes-dislikes">
+      <div class="container">
+        <h2 class="text-center mt-0">Likes/Dislikes</h2>
+        <hr class="divider my-4" />
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Likes</h3>
+            <table class="table">
+              <tr>
+                <td><strong>Art:</strong></td>
+                <td>
+                  🎨 Sketching, painting, or simply appreciating visual
+                  expressions of creativity—art is a fundamental part of my
+                  life. It's a medium through which emotions, ideas, and
+                  imagination take tangible form.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Games:</strong></td>
+                <td>
+                  🎮 Whether I'm navigating virtual realms or strategizing in
+                  board games, the world of gaming captivates me. It's not just
+                  a pastime; it's an immersive experience that challenges my
+                  mind and sparks my competitive spirit.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Anime:</strong></td>
+                <td>
+                  🎬 From epic battles to heartwarming stories, anime has a
+                  special place in my heart. The vibrant characters and
+                  imaginative worlds never fail to transport me to different
+                  dimensions of storytelling.
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <h3>Dislikes</h3>
+            <table class="table">
+              <tr>
+                <td><strong>Liars:</strong></td>
+                <td>
+                  🤥 Honesty is the cornerstone of any meaningful connection.
+                  Deception undermines trust, and I have little patience for
+                  those who choose falsehoods over transparency.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Haters:</strong></td>
+                <td>
+                  🚫 Constructive criticism is valuable, but baseless negativity
+                  is something I can do without. I believe in uplifting and
+                  supporting others rather than tearing them down.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Backstabbers:</strong></td>
+                <td>
+                  🔪 Trust is sacred, and those who betray it by going behind
+                  one's back are individuals I prefer to keep at a distance.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Cheaters:</strong></td>
+                <td>
+                  🕹️ Whether in games or in life, cheating undermines the
+                  essence of fair play. I believe in the value of hard work and
+                  integrity.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="projects">
+      <div class="container">
+        <h2 class="text-center mt-0">Projects</h2>
+        <hr class="divider my-4" />
+        <div class="card">
+          <br />
+          <br />
+          <div class="card-body">
+            <h5 class="card-title">Learning Contract</h5>
+            <p class="card-text">
+              This is the Learning Contract for the subject CIT14 - Web
+              Technologies.
+            </p>
+            <a href="javascript:void(0);" onclick="openProject('project1')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">LAB ACTIVITY : Webpage</h5>
+            <p class="card-text">Try replicating the website given</p>
+            <a href="javascript:void(0);" onclick="openProject('project2')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">LAB ACTIVITY : Mockups to Websites</h5>
+            <p class="card-text">Create a website based on this figure</p>
+            <a href="javascript:void(0);" onclick="openProject('project3')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              LAB ACTIVITY: Mockups to HTML + Improved CSS
+            </h5>
+            <p class="card-text">
+              Please look at the given mockups provided. The pages below should
+              be linked to each other.
+            </p>
+            <a href="javascript:void(0);" onclick="openProject('project4')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">LAB ACTIVITY: Introduction to JavaScript</h5>
+            <p class="card-text">Create a website that does the following</p>
+            <a href="javascript:void(0);" onclick="openProject('project5')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              LAB ACTIVITY: Introduction to JavaScript 2
+            </h5>
+            <p class="card-text">
+              Download the following and provide the needed requirements
+            </p>
+            <a href="javascript:void(0);" onclick="openProject('project6')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">BootStrap - JavaScript Activity 1</h5>
+            <p class="card-text">
+              Place a progress bar what is empty with a text of '0%'. Have 3
+              buttons that will do the following
+            </p>
+            <a href="javascript:void(0);" onclick="openProject('project7')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">BootStrap - JavaScript Activity 2</h5>
+            <p class="card-text">Create the following design and flow</p>
+            <a href="javascript:void(0);" onclick="openProject('project8')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Bootstrap - jQuery Activity 3 (by 3s) : REPOST
+            </h5>
+            <p class="card-text">Create a website that will do the following</p>
+            <a href="javascript:void(0);" onclick="openProject('project9')"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="socials">
+      <div class="container">
+        <h2 class="text-center mt-0">Socials</h2>
+        <hr class="divider my-4" />
+        <div class="text-center">
+          <strong>Follow me at:</strong>
+          <br />
+          <br />
+          Facebook:
+          <a
+            href="https://www.facebook.com/dont.mind.me.8"
+            target="_blank"
+            class="social-icons"
+            >dont.mind.me.8</a
+          >
+          <br />
+          <br />
+          Instagram:
+          <a
+            href="https://www.instagram.com/meepthecat8/?hl=en"
+            target="_blank"
+            class="social-icons"
+            >meepthecat8
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="quote">
+      <div class="container">
+        <h2 class="text-center mt-0">Quote</h2>
+        <hr class="divider my-4" />
+        <div class="quote-section">
+          <p>
+            "Embrace the glorious mess that you are, for it is your own unique
+            tapestry that weaves the story of who you are meant to be.".
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var sections = document.querySelectorAll(".page-section");
+
+        var options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5,
+        };
+
+        var observer = new IntersectionObserver(handleIntersect, options);
+
+        sections.forEach(function (section) {
+          observer.observe(section);
+        });
+
+        function handleIntersect(entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("zoom-in");
+            } else {
+              entry.target.classList.remove("zoom-in");
+            }
+          });
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.querySelector("header").classList.add("intro");
+          document
+            .querySelectorAll(".profile-picture, .profile-name, .cute-tags")
+            .forEach(function (el) {
+              el.classList.add("intro");
+            });
+        }, 50);
+      });
+    </script>
+    <script>
+      function openProject(projectId) {
+        var projectUrl;
+        if (projectId === "project1") {
+          projectUrl = "Aubrey_Tuvera.html";
+        } else if (projectId === "project2") {
+          projectUrl = "TuveraAubrey_LabAct1.html";
+        } else if (projectId === "project3") {
+          projectUrl = "Home_Page.html";
+        } else if (projectId === "project4") {
+          projectUrl = "OASIS_Home_Page.html";
+        } else if (projectId === "project5") {
+          projectUrl = "Tuvera,Aubrey.html";
+        } else if (projectId === "project6") {
+          projectUrl = "index-1.html";
+        } else if (projectId === "project7") {
+          projectUrl = "Tuvera,Aubrey-1 (1) (1).html";
+        } else if (projectId === "project8") {
+          projectUrl = "Tuvera,Calixto,Lacsina.html";
+        } else if (projectId === "project9") {
+          projectUrl = "PASCASIO,LACSINA,TUVERA.html";
+        }
+
+        window.open(projectUrl, "_blank");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body{
+	background-color: lightyellow;
+	font-family: 'Noto Sans CJK', sans-serif;
+}
+
+.sec-container{
+	width: 100%;
+	display:grid;
+	margin-left:10%;
+	margin-top:10%;
+	grid-template-columns: 40% 40%;
+}
+
+.cz-content{
+	text-align: center;
+}
+
+.grid{
+	background-color: yellow;
+	padding: 20px;
+	border:2px solid black;
+}
+
+.cz-inputs > input {
+	width: 100%;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.cz-inputs > #btnSubmit {
+	width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+	font-size: 20px;
+}

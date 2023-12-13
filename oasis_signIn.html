@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OASIS</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/monarda");
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+          sans-serif;
+        background-image: url("https://images.hdqwalls.com/download/auroral-forest-4k-illustration-h0-3840x2400.jpg?fbclid=IwAR0vE5RdFDVWHVRY-S_5A5HWduaYBWOlxzcx-kNTmLLO5QxHenkxEET27OI");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-color: #cad9f0;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #95cee2;
+        color: #fcfcfc;
+        padding: 20px 30px;
+        transition: background-color 0.3s;
+      }
+
+      .container:hover {
+        background-color: #4c87b4;
+      }
+
+      .social-links {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        display: inline-flex;
+        align-items: center;
+        transition: color 0.3s, transform 0.3s;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .social-links:hover {
+        color: #ffffff;
+        background-color: #321b58;
+        transform: scale(1.1);
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+      }
+
+      .sub-form {
+        background-color: rgba(45, 144, 211, 0.863);
+        width: 600px;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(1px);
+      }
+
+      .upper-form {
+        text-align: center;
+      }
+
+      h2 {
+        color: #ffffff;
+        font-family: "monarda";
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+
+      label {
+        display: block;
+        margin: 5px 0;
+        color: #000000;
+        text-align: left;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        background-color: #ffffff;
+        width: 90%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #555555;
+        border-radius: 5px;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      button[type="submit"] {
+        background-color: #47398d;
+        color: #ffffff;
+        padding: 12px 250px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #12045f;
+        transform: scale(1.05);
+      }
+
+      .footer {
+        background-color: #020c25;
+        color: #fff;
+        padding: 55px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="parent-link">
+          <div>
+            <a href="OASIS_Home_Page.html" class="social-links">OASIS</a>
+            <a href="Oasis_aboutus.html" class="social-links">ABOUT US</a>
+            <a href="Oasis_article1.html" class="social-links">ARTICLE1</a>
+            <a href="Oasis_article2.html" class="social-links">ARTICLE2</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="form">
+      <h2>SIGN IN</h2>
+      <form action="#" class="sub-form">
+        <div class="upper-form">
+          <label>E-MAIL</label> <br />
+          <input type="text" name="E-Mail" /> <br />
+          <label>PASSWORD</label> <br />
+          <input type="password" name="PASSWORD" /> <br />
+        </div>
+        <div class="btn"><button type="submit">SUBMIT</button> <br /></div>
+      </form>
+    </div>
+    <div class="footer">&copy; sebi 2023</div>
+  </body>
+</html>

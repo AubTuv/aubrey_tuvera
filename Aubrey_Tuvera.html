@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      body {
+        background-color: #fff5ad;
+      }
+      .background {
+        width: 940px;
+        margin: 0px auto;
+      }
+      h1 {
+        color: #282828;
+        border: 3.5px solid #010103;
+        background-color: #efaf1b;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 35px;
+        font-weight: bolder;
+        font-family: PT Mono, monospace;
+        position: fixed;
+        top: 50px;
+        left: 1120px;
+      }
+      p {
+        text-align: center;
+        border: 3.5px solid #010103;
+        color: #282828;
+        background-color: #efaf1b;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 17px;
+        font-weight: bolder;
+        font-family: PT Mono, monospace;
+        position: fixed;
+        top: 190px;
+        left: 950px;
+      }
+      h2 {
+        font-size: 30px;
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        color: #01495e;
+        position: absolute;
+        top: 370px;
+        left: 315px;
+      }
+      ul {
+        list-style: none;
+      }
+      button {
+        border-radius: 5px;
+        width: 50px;
+        display: inline;
+        height: 50px;
+        margin: 10px 10px 10px 10px;
+        padding: 5px auto;
+        border: 2px solid black;
+        text-decoration: none;
+      }
+    
+      li {
+        border: 2px solid transparent;
+        transition: all 500ms ease;
+      }
+      li:hover {
+        border: 2px solid rgba(255, 255, 254, 0.5);
+        background: rgba(255, 255, 254, 0.5);
+        cursor: pointer;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      .games {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+      }
+      .expectations {
+        background: url(https://static.wixstatic.com/media/3f10ef_2c9c830d79b44c4ca8b3ddb7c70f663f~mv2.png/v1/fit/w_2500,h_1330,al_c/3f10ef_2c9c830d79b44c4ca8b3ddb7c70f663f~mv2.png);
+        background-size: cover;
+      }
+      .i1 {
+        position: absolute;
+        top: 170px;
+        left: 450px;
+      }
+      .contributions {
+        background: url(https://thumbs.dreamstime.com/t/contribution-round-blue-push-button-isolated-129629754.jpg);
+        background-size: cover;
+      }
+      .i2 {
+        position: absolute;
+        top: 170px;
+        left: 550px;
+      }
+      .motivations {
+        background: url(https://images.vexels.com/media/users/3/148006/isolated/lists/9b541a56adb675105dc4e79e6babbc1a-motivation-square-icon.png);
+        background-size: cover;
+      }
+      .i3 {
+        position: absolute;
+        top: 270px;
+        left: 450px;
+      }
+      .hindrances {
+        background: url(https://i.ytimg.com/vi/x5jkXal41GI/maxresdefault.jpg);
+        background-size: cover;
+      }
+      .i4 {
+        position: absolute;
+        top: 270px;
+        left: 550px;
+      }
+      .aboutME {
+        background: url(https://monaghantourism.com/wp-content/uploads/2019/11/me-me.jpg);
+        background-size: cover;
+      }
+      .i5 {
+        position: absolute;
+        top: 230px;
+        left: 330px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/000/210/809/large_2x/vector-office-desktop-illustration.jpg"
+      class="background"
+    />
+    <h1>ABOUT ME💗</h1>
+    <p>
+      Hello there, My name is Aubrey Tuvera, a BSIT student- Web Technology
+      Track. The past year has been quite a ride for me, filled with exciting
+      discoveries and a thirst for knowledge. In my classes, I've been digging
+      into the ins and outs of programming, getting the hang of both Python and
+      Java – it's been a real adventure! But it doesn't stop there. In my
+      downtime, I've been tinkering with HTML, CSS, and JavaScript, trying to
+      create cool stuff on the web. It's a bit like learning magic spells to
+      bring websites to life! I'm constantly amazed at how technology can
+      transform our world, and I can't wait to put my newfound skills to work on
+      real projects and be part of the ever-evolving web technology landscape.
+      <br><br> Click the icon to show lists
+    </p>
+    <ul>
+      <li class="i1">
+        <button class="expectations"></button>
+        <div class="games">Expectations</div>
+      </li>
+      <li class="i2">
+        <button class="contributions"></button>
+        <div class="games">Contributions</div>
+      </li>
+      <li class="i3">
+        <button class="motivations"></button>
+        <div class="games">Motivations</div>
+      </li>
+      <li class="i4">
+        <button class="hindrances"></button>
+        <div class="games">Hindrances</div>
+      </li>
+      </li>
+      <li class="i5">
+        <button class="aboutME"></button>
+        <div class="games">About Me</div>
+      </li>
+    </ul>
+    <script>
+      function expect() {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Expectations 📃";
+        let p = document.querySelector("p");
+        p.innerHTML =
+          "•My aspiration is to become a diligent student.<br><br>•I hold myself accountable to being diligent in both my studies and meeting the requirements.<br><br>•I desire to possess an inquisitive mindset towards the subjects being taught.<br><br>•I am committed to taking all the lessons taught seriously.<br><br>•My objective is to learn and effectively apply the knowledge gained.";
+      }
+      function contribute() {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Contributions 💰";
+        let p = document.querySelector("p");
+        p.innerHTML =
+          "•I am willing to allocate the necessary time to complete each lesson and requirement.<br><br>•Additionally, I will exert the required effort to excel in thecourse.<br><br>•I aim to have an open-minded approach. <br><br>•I am committed to submitting my work promptly and to the best of my ability. <br><br>•I am eager to contribute my passion for learning towards the course.";
+      }
+      function motivate() {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Motivations 🏃‍♀️";
+        let p = document.querySelector("p");
+        p.innerHTML =
+          "•I aspire to excel in this course.<br><br>•My goal is to graduate with the highest academic honors, summa cum laude.<br><br>•I have a strong desire to become a proficient web developer in the future.<br><br> •I hope to have the opportunity to live and work abroad someday. <br><br>•Traveling the world is a dream of mine that I hope to fulfill one day";
+      }
+      function hinder() {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Hindrances 🚧";
+        let p = document.querySelector("p");
+        p.innerHTML =
+          "•Managing my time effectively may pose a challenge for me. <br><br>•In the event of an Internet connection failure, I anticipate encountering significant issues. <br><br>•Additionally, a power outage could prove to be a hindrance. <br><br>•Coping with natural disasters and catastrophes is also a major concern I may face.<br><br> •As my health is a top priority, I will make every effort to avoid falling ill.";
+      }
+      function ME() {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "ABOUT ME💗";
+        let p = document.querySelector("p");
+        p.innerHTML =
+          "Hello there, My name is Aubrey Tuvera, a BSIT student- Web Technology Track. The past year has been quite a ride for me, filled with exciting discoveries and a thirst for knowledge. In my classes, I've been digging into the ins and outs of programming, getting the hang of both Python and Java – it's been a real adventure! But it doesn't stop there. In my downtime, I've been tinkering with HTML, CSS, and JavaScript, trying to create cool stuff on the web. It's a bit like learning magic spells to bring websites to life! I'm constantly amazed at how technology can transform our world, and I can't wait to put my newfound skills to work on real projects and be part of the ever-evolving web technology landscape.<br><br> Click the icon to show lists";
+      }
+
+      let expectations = document.querySelector(".expectations");
+      expectations.addEventListener("click", expect);
+      let contributions = document.querySelector(".contributions");
+      contributions.addEventListener("click", contribute);
+      let motivations = document.querySelector(".motivations");
+      motivations.addEventListener("click", motivate);
+      let hindrances = document.querySelector(".hindrances");
+      hindrances.addEventListener("click", hinder);
+      let aboutME = document.querySelector(".aboutME");
+      aboutME.addEventListener("click", ME);
+    </script>
+  </body>
+</html>

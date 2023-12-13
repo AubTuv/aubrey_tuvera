@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+        background-image: url("your-background-image.jpg"); /* Replace 'your-background-image.jpg' with the path to your image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .contact-info {
+        width: 40%;
+        padding: 20px;
+        text-align: center; /* Center align text in contact information */
+      }
+
+      .contact-details {
+        margin-bottom: 10px;
+      }
+
+      .contact-details h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .contact-details p {
+        margin: 5px 0;
+      }
+
+      .contact-form {
+        width: 60%;
+        padding: 20px;
+      }
+
+      .contact-form h2 {
+        font-size: 24px;
+        margin: 0 0 20px 0;
+      }
+
+      .contact-form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center; /* Center align text in the button */
+        display: block; /* Make the button a block element */
+        margin-top: 10px; /* Add spacing between the form fields and the button */
+      }
+
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+
+      .back-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center; /* Center align text in the button */
+        display: block; /* Make the button a block element */
+        margin-top: 10px; /* Add spacing between the contact information and the button */
+      }
+
+      .back-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-info">
+        <div class="contact-details">
+          <h2>Contact Information</h2>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Email: contact@example.com</p>
+        </div>
+        <a href="Home_Page.html" class="back-button">Back</a>
+        <!-- Replace 'your-back-page.html' with the actual URL of the page you want to navigate back to -->
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

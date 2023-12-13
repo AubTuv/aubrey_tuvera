@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My website</title>
+  </head>
+  <body>
+    <label>Name:</label>
+    <input type="text" id="user_name" />
+    <label>Section:</label>
+    <input type="text" id="user_section" />
+    <label>Year Level:</label>
+    <input type="number" id="user_year" min="1" step="1" max="4" />
+    <ul>
+      <li>
+        <label>Input Grade for Subject 1:</label>
+        <input type="number" id="grade_one" min="0" step="5" max="100" />
+      </li>
+      <li>
+        <label>Input Grade for Subject 2:</label>
+        <input type="number" id="grade_two" min="0" step="5" max="100" />
+      </li>
+      <li>
+        <label>Input Grade for Subject 3:</label>
+        <input type="number" id="grade_three" min="0" step="5" max="100" />
+      </li>
+      <li>
+        <label>Input Grade for Subject 4:</label>
+        <input type="number" id="grade_four" min="0" step="5" max="100" />
+      </li>
+      <li>
+        <label>Input Grade for Subject 5:</label>
+        <input type="number" id="grade_five" min="0" step="5" max="100" />
+      </li>
+    </ul>
+    <button id="btnSubmit">Submit</button>
+    <div id="user_report1"></div>
+    <div id="user_report2"></div>
+    <div id="user_report3"></div>
+    <div id="user_report4"></div>
+    <div id="user_report5"></div>
+  </body>
+  <script type="text/javascript">
+    const userName = document.getElementById("user_name");
+    const userSect = document.getElementById("user_section");
+    const userYear = document.getElementById("user_year");
+    const gradeOne = document.getElementById("grade_one");
+    const gradeTwo = document.getElementById("grade_two");
+    const gradeThree = document.getElementById("grade_three");
+    const gradeFour = document.getElementById("grade_four");
+    const gradeFive = document.getElementById("grade_five");
+    const userReport1 = document.getElementById("user_report1");
+    const userReport2 = document.getElementById("user_report2");
+    const userReport3 = document.getElementById("user_report3");
+    const userReport4 = document.getElementById("user_report4");
+    const userReport5 = document.getElementById("user_report5");
+
+    const btnSubmit = document.getElementById("btnSubmit");
+    btnSubmit.addEventListener("click", reportGrade);
+
+    function reportGrade() {
+      const oneSub = parseFloat(gradeOne.value);
+      const twoSub = parseFloat(gradeTwo.value);
+      const threeSub = parseFloat(gradeThree.value);
+      const fourSub = parseFloat(gradeFour.value);
+      const fiveSub = parseFloat(gradeFive.value);
+
+      const averageGrade = (oneSub + twoSub + threeSub + fourSub + fiveSub) / 5;
+
+      let passOrfail = "a";
+      if (averageGrade > 90) {
+        passOrfail = "passed with honors";
+      } else if (averageGrade >= 75) {
+        passOrfail = "passed";
+      } else {
+        passOrfail = "failed";
+      }
+
+      // Display the information
+      userReport1.innerHTML = "Name: " + userName.value;
+      userReport2.innerHTML = "Section: " + userSect.value;
+      userReport3.innerHTML = "Year: " + userYear.value;
+      userReport4.innerHTML = "Grade: " + averageGrade.toFixed(0);
+      userReport5.innerHTML = "You " + passOrfail;
+    }
+  </script>
+</html>

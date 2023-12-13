@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the entire background to light blue */
+      html {
+        background-image: url("purple3.jpg");
+        background-size: cover;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background-color: transparent; /* Removed background color from header */
+        padding: 10px;
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+      }
+
+      .header-button {
+        margin-right: 10px;
+        padding: 5px 10px;
+        background-color: purple; /* Red */
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 80% 20%; /* Adjusted column widths */
+        padding: 20px;
+        gap: 10px; /* Added gap between columns */
+      }
+
+      .main-content {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Divide content into two columns */
+        height: 500px; /* Increased height */
+        font-size: 23px;
+        color: white;
+      }
+
+      .main-content img {
+        max-width: 100%;
+        height: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+
+      .ads {
+        padding: 50px;
+        height: 500px; /* Increased height */
+      }
+      .ads img {
+        width: 120%;
+        height: 535px; /* Increased height */
+      }
+      .footer {
+        background-color: transparent;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <button class="header-button" onclick="doSomething1()">OASIS</button>
+        <button class="header-button" onclick="doSomething2()">ABOUT US</button>
+        <button class="header-button" onclick="doSomething4()">ARTICLE2</button>
+      </div>
+      <div class="header-right">
+        <button class="header-button" onclick="doSomething3()">SIGN IN</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-content">
+        <div>
+          <h1>Mirador Heritage and Eco Park</h1>
+          <p align="justify">
+            Baguio City is a popular tourist destination in the Philippines,
+            known for its cool climate, pine-dominated landscapes, and romantic
+            atmosphere. One of the newest attractions in the city is the Mirador
+            Heritage and Eco Park, located on top of Mirador Hill and near the
+            famed Lourdes Grotto. This 5-hectare park is filled with many
+            Instagrammable spots and offers a bamboo forest, a Japanese torii
+            gate, and a view of the city.<br /><br />
+            Mirador Heritage and Eco Park is a great place to visit if you're
+            looking for a new attraction in Baguio City. It offers a unique
+            blend of nature, culture, and history that is sure to appeal to a
+            wide range of travelers.
+          </p>
+        </div>
+        <div>
+          <img src="sunset.png" alt="sunset" />
+        </div>
+      </div>
+      <div class="ads">
+        <img src="shoe01.webp" alt="shoe01" />
+      </div>
+    </div>
+    <footer class="footer">
+      <p>@Focad Delson</p>
+    </footer>
+    <script>
+      function doSomething1() {
+        window.location.href = "OASIS_Home_Page.html";
+      }
+      function doSomething2() {
+        window.location.href = "Oasis_aboutus.html";
+      }
+      function doSomething3() {
+        window.location.href = "oasis_signIn.html";
+      }
+      function doSomething4() {
+        window.location.href = "Oasis_article2.html";
+      }
+    </script>
+  </body>
+</html>
